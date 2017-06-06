@@ -1,26 +1,21 @@
 {
     "name": "csi0n/entrust-dev",
     "description": "This package provides a flexible way to add Role-based Permissions to Laravel",
-    "keywords": ["laravel","illuminate","auth","roles","acl","permission"],
+    "keywords": ["laravel", "illuminate", "auth", "roles", "acl", "permission"],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Zizaco Zizuini",
-            "email": "zizaco@gmail.com"
-        },
-        {
-            "name": "Andrew Elkins",
-            "homepage": "http://andrewelkins.com"
-        },
-        {
-            "name": "Ben Batschelet",
-            "homepage": "http://github.com/bbatsche"
-        },
-        {
-            "name": "Michele Angioni",
-            "email": "michele.angioni@gmail.com"
-        }
-    ],
+    "authors": [{
+        "name": "Zizaco Zizuini",
+        "email": "zizaco@gmail.com"
+    }, {
+        "name": "Andrew Elkins",
+        "homepage": "http://andrewelkins.com"
+    }, {
+        "name": "Ben Batschelet",
+        "homepage": "http://github.com/bbatsche"
+    }, {
+        "name": "Michele Angioni",
+        "email": "michele.angioni@gmail.com"
+    }],
     "require": {
         "php": ">=5.5.0",
         "illuminate/console": "~5.0",
@@ -34,17 +29,12 @@
         "sami/sami": "dev-master"
     },
     "autoload": {
-        "classmap": [
-            "src/commands"
-        ],
+        "classmap": ["src/commands"],
         "psr-4": {
             "Zizaco\\Entrust\\": "src/Entrust/"
         }
     },
     "autoload-dev": {
-        "classmap": [
-            "tests/Middleware/MiddlewareTest.php"
-        ]
-    },
-    "minimum-stability": "dev"
+        "classmap": ["tests/Middleware/MiddlewareTest.php"]
+    }
 }
